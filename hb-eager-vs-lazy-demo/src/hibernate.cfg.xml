@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	
+		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/hb-03-one-to-many?useSSL=false</property>
+		
+		<property name="connection.username">hbstudent</property>
+		
+		<property name="connection.password">hbstudent</property>
+		
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		
+		<property name="connection.autocommit">true</property>
+		
+		<property name="connection.pool_size">10</property>
+		
+		<property name="show_sql">true</property>
+		
+		<property name="format_sql">true</property>
+		
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<property name="current_session_context_class">thread</property>
+		
+		<property name="transaction.auto_close_session">true</property>
+				 
+<!-- 		 <mapping resource=""/> -->
+<!-- 		 <mapping class="com.luv2code.hibernate.demo.entity.Instructor.java"/> -->
+<!-- 		 <mapping class="com.luv2code.hibernate.demo.entity.InstructorDetail.java"/> -->
+		 
+	</session-factory>
+</hibernate-configuration>		
